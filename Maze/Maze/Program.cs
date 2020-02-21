@@ -13,7 +13,6 @@ namespace Maze
         static void Main(string[] args)
         {
             Start();
-            Console.ReadLine();
         }
     }
 }
