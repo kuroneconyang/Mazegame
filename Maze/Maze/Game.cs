@@ -113,7 +113,7 @@ namespace Maze
                     playMap[y, x] = "P";
                 }
             }
-            Console.Clear();
+            
 
         }
 
@@ -158,6 +158,11 @@ namespace Maze
                             }
                         }
                     }
+                    if (start == false)
+                    {
+                        Console.Clear();
+                        continue;
+                    }
                     ConsoleKeyInfo pressKey = Console.ReadKey();
                     if (pressKey.Key == ConsoleKey.Escape)
                     {
@@ -189,7 +194,7 @@ namespace Maze
                     {
                         Move(pressKey,playMap);
                     }
-                    
+                    Console.Clear();
                 }
             }
         }
